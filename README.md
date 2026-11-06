@@ -72,23 +72,4 @@ These are historical, incomplete snapshots, not an authoritative map of a genre.
 
 `graph2.py` remains a compatibility alias for `graph.py`; the duplicate PyVis renderer was consolidated into the Plotly exporter.
 
-## Development
 
-```sh
-python -m unittest discover -s tests -v
-```
-
-## Publishing to GitHub
-
-This folder has no existing Git history. After reviewing the files, create an empty GitHub repository, then:
-
-```sh
-git init -b main
-git add .
-git diff --cached --stat
-git commit -m "Prepare Featmap collaboration explorer"
-git remote add origin https://github.com/YOUR_USERNAME/featmap.git
-git push -u origin main
-```
-
-The old embedded credentials and local authentication cache were removed during cleanup. Revoke or rotate those old credentials before publishing; deleting them does not invalidate copies elsewhere. `.gitignore` excludes local environments, credentials, caches, and generated HTML. Choose a license before inviting reuse; no license has been assumed for this project or its snapshots.
